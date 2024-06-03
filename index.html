@@ -1,2 +1,80 @@
-<p>3Mvc的生成音频demo即将发布...</p>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Conversion Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .audio-sample {
+            margin-bottom: 20px;
+        }
+        .audio-sample h2 {
+            margin-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Voice Conversion Demo</h1>
+    </header>
+    <div class="container">
+        <div class="audio-sample">
+            <h2>Original Voice Sample 1</h2>
+            <audio controls>
+                <source src="assets/original1.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-sample">
+            <h2>Converted Voice Sample 1</h2>
+            <audio controls>
+                <source src="assets/converted1.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-sample">
+            <h2>Original Voice Sample 2</h2>
+            <audio controls>
+                <source src="assets/original2.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-sample">
+            <h2>Converted Voice Sample 2</h2>
+            <audio controls>
+                <source src="assets/converted2.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <!-- 添加更多音频样例 -->
+    </div>
+    <footer>
+        <p>© 2024 Your Name</p>
+    </footer>
+</body>
+</html>
