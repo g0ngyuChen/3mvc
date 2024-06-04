@@ -18,7 +18,7 @@
             text-align: center;
         }
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
             background-color: white;
@@ -26,12 +26,27 @@
         }
         .sample-group {
             margin-bottom: 40px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
         }
         .sample-group h2 {
             margin-bottom: 10px;
         }
         .audio-sample {
             margin-bottom: 20px;
+        }
+        .conversion-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .conversion-type {
+            width: 45%;
+            margin-bottom: 20px;
+        }
+        .conversion-type h3 {
+            margin-bottom: 10px;
         }
         footer {
             text-align: center;
@@ -63,36 +78,85 @@
                     Your browser does not support the audio element.
                 </audio>
             </div>
-            <!-- 模型结果 -->
-            <div class="audio-sample">
-                <h3>Model 1 - Pitch Conversion</h3>
-                <audio controls>
-                    <source src="assets/parallel1/model1_pitch.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
+            <div class="conversion-group">
+                <div class="conversion-type">
+                    <h3>Only Rhythm</h3>
+                    <div class="audio-sample">
+                        <p>Model 1</p>
+                        <audio controls>
+                            <source src="assets/parallel1/model1_rhythm.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 2</p>
+                        <audio controls>
+                            <source src="assets/parallel1/model2_rhythm.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 3</p>
+                        <audio controls>
+                            <source src="assets/parallel1/model3_rhythm.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 4</p>
+                        <audio controls>
+                            <source src="assets/parallel1/model4_rhythm.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 5</p>
+                        <audio controls>
+                            <source src="assets/parallel1/model5_rhythm.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="conversion-type">
+                    <h3>Only Timbre</h3>
+                    <div class="audio-sample">
+                        <p>Model 1</p>
+                        <audio controls>
+                            <source src="assets/parallel1/model1_timbre.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 2</p>
+                        <audio controls>
+                            <source src="assets/parallel1/model2_timbre.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 3</p>
+                        <audio controls>
+                            <source src="assets/parallel1/model3_timbre.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 4</p>
+                        <audio controls>
+                            <source src="assets/parallel1/model4_timbre.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 5</p>
+                        <audio controls>
+                            <source src="assets/parallel1/model5_timbre.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <!-- 添加其他转换类型，如音高转换、节奏和音色同时转换 -->
             </div>
-            <div class="audio-sample">
-                <h3>Model 1 - Timbre Conversion</h3>
-                <audio controls>
-                    <source src="assets/parallel1/model1_timbre.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <div class="audio-sample">
-                <h3>Model 1 - Rhythm Conversion</h3>
-                <audio controls>
-                    <source src="assets/parallel1/model1_rhythm.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <div class="audio-sample">
-                <h3>Model 1 - Combined Conversion</h3>
-                <audio controls>
-                    <source src="assets/parallel1/model1_combined.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <!-- 重复上述结构用于其他模型 -->
         </div>
 
         <!-- 继续添加其他平行样本组 -->
@@ -114,36 +178,85 @@
                     Your browser does not support the audio element.
                 </audio>
             </div>
-            <!-- 模型结果 -->
-            <div class="audio-sample">
-                <h3>Model 1 - Pitch Conversion</h3>
-                <audio controls>
-                    <source src="assets/non_parallel1/model1_pitch.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
+            <div class="conversion-group">
+                <div class="conversion-type">
+                    <h3>Only Rhythm</h3>
+                    <div class="audio-sample">
+                        <p>Model 1</p>
+                        <audio controls>
+                            <source src="assets/non_parallel1/model1_rhythm.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 2</p>
+                        <audio controls>
+                            <source src="assets/non_parallel1/model2_rhythm.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 3</p>
+                        <audio controls>
+                            <source src="assets/non_parallel1/model3_rhythm.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 4</p>
+                        <audio controls>
+                            <source src="assets/non_parallel1/model4_rhythm.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 5</p>
+                        <audio controls>
+                            <source src="assets/non_parallel1/model5_rhythm.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="conversion-type">
+                    <h3>Only Timbre</h3>
+                    <div class="audio-sample">
+                        <p>Model 1</p>
+                        <audio controls>
+                            <source src="assets/non_parallel1/model1_timbre.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 2</p>
+                        <audio controls>
+                            <source src="assets/non_parallel1/model2_timbre.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 3</p>
+                        <audio controls>
+                            <source src="assets/non_parallel1/model3_timbre.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 4</p>
+                        <audio controls>
+                            <source src="assets/non_parallel1/model4_timbre.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-sample">
+                        <p>Model 5</p>
+                        <audio controls>
+                            <source src="assets/non_parallel1/model5_timbre.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <!-- 添加其他转换类型，如音高转换、节奏和音色同时转换 -->
             </div>
-            <div class="audio-sample">
-                <h3>Model 1 - Timbre Conversion</h3>
-                <audio controls>
-                    <source src="assets/non_parallel1/model1_timbre.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <div class="audio-sample">
-                <h3>Model 1 - Rhythm Conversion</h3>
-                <audio controls>
-                    <source src="assets/non_parallel1/model1_rhythm.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <div class="audio-sample">
-                <h3>Model 1 - Combined Conversion</h3>
-                <audio controls>
-                    <source src="assets/non_parallel1/model1_combined.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <!-- 重复上述结构用于其他模型 -->
         </div>
 
         <!-- 继续添加其他非平行样本组 -->
