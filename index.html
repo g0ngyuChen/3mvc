@@ -24,11 +24,14 @@
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .sample-group {
+            margin-bottom: 40px;
+        }
+        .sample-group h2 {
+            margin-bottom: 10px;
+        }
         .audio-sample {
             margin-bottom: 20px;
-        }
-        .audio-sample h2 {
-            margin-bottom: 5px;
         }
         footer {
             text-align: center;
@@ -43,35 +46,107 @@
         <h1>Voice Conversion Demo</h1>
     </header>
     <div class="container">
-        <div class="audio-sample">
-            <h2>Original Voice Sample 1</h2>
-            <audio controls>
-                <source src="assets/original1.wav" type="audio/wav">
-                Your browser does not support the audio element.
-            </audio>
+        <!-- 平行样本部分 -->
+        <div class="sample-group">
+            <h2>Parallel Samples - Group 1</h2>
+            <div class="audio-sample">
+                <h3>Source Audio</h3>
+                <audio controls>
+                    <source src="assets/parallel1/source.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <h3>Target Audio</h3>
+                <audio controls>
+                    <source src="assets/parallel1/target.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <!-- 模型结果 -->
+            <div class="audio-sample">
+                <h3>Model 1 - Pitch Conversion</h3>
+                <audio controls>
+                    <source src="assets/parallel1/model1_pitch.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <h3>Model 1 - Timbre Conversion</h3>
+                <audio controls>
+                    <source src="assets/parallel1/model1_timbre.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <h3>Model 1 - Rhythm Conversion</h3>
+                <audio controls>
+                    <source src="assets/parallel1/model1_rhythm.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <h3>Model 1 - Combined Conversion</h3>
+                <audio controls>
+                    <source src="assets/parallel1/model1_combined.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <!-- 重复上述结构用于其他模型 -->
         </div>
-        <div class="audio-sample">
-            <h2>Converted Voice Sample 1</h2>
-            <audio controls>
-                <source src="assets/converted1.wav" type="audio/wav">
-                Your browser does not support the audio element.
-            </audio>
+
+        <!-- 继续添加其他平行样本组 -->
+        
+        <!-- 非平行样本部分 -->
+        <div class="sample-group">
+            <h2>Non-Parallel Samples - Group 1</h2>
+            <div class="audio-sample">
+                <h3>Source Audio</h3>
+                <audio controls>
+                    <source src="assets/non_parallel1/source.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <h3>Target Audio</h3>
+                <audio controls>
+                    <source src="assets/non_parallel1/target.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <!-- 模型结果 -->
+            <div class="audio-sample">
+                <h3>Model 1 - Pitch Conversion</h3>
+                <audio controls>
+                    <source src="assets/non_parallel1/model1_pitch.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <h3>Model 1 - Timbre Conversion</h3>
+                <audio controls>
+                    <source src="assets/non_parallel1/model1_timbre.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <h3>Model 1 - Rhythm Conversion</h3>
+                <audio controls>
+                    <source src="assets/non_parallel1/model1_rhythm.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <h3>Model 1 - Combined Conversion</h3>
+                <audio controls>
+                    <source src="assets/non_parallel1/model1_combined.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <!-- 重复上述结构用于其他模型 -->
         </div>
-        <div class="audio-sample">
-            <h2>Original Voice Sample 2</h2>
-            <audio controls>
-                <source src="assets/original2.wav" type="audio/wav">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-        <div class="audio-sample">
-            <h2>Converted Voice Sample 2</h2>
-            <audio controls>
-                <source src="assets/converted2.wav" type="audio/wav">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-        <!-- 添加更多音频样例 -->
+
+        <!-- 继续添加其他非平行样本组 -->
     </div>
     <footer>
         <p>© 2024 Your Name</p>
