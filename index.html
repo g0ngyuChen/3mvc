@@ -24,13 +24,18 @@
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .section-title {
+            margin: 40px 0 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
         .sample-group {
             margin-bottom: 40px;
             border: 1px solid #ccc;
             padding: 20px;
             background-color: #f9f9f9;
         }
-        .sample-group h2 {
+        .sample-group h3 {
             margin-bottom: 10px;
         }
         .audio-sample {
@@ -45,7 +50,7 @@
             width: 45%;
             margin-bottom: 20px;
         }
-        .conversion-type h3 {
+        .conversion-type h4 {
             margin-bottom: 10px;
         }
         footer {
@@ -62,17 +67,19 @@
     </header>
     <div class="container">
         <!-- 平行样本部分 -->
+        <div class="section-title">Parallel Samples</div>
+        
         <div class="sample-group">
-            <h2>Parallel Samples - Group 1</h2>
+            <h3>Group 1</h3>
             <div class="audio-sample">
-                <h3>Source Audio</h3>
+                <p>Source Audio</p>
                 <audio controls>
                     <source src="assets/parallel1/source.wav" type="audio/wav">
                     Your browser does not support the audio element.
                 </audio>
             </div>
             <div class="audio-sample">
-                <h3>Target Audio</h3>
+                <p>Target Audio</p>
                 <audio controls>
                     <source src="assets/parallel1/target.wav" type="audio/wav">
                     Your browser does not support the audio element.
@@ -80,7 +87,7 @@
             </div>
             <div class="conversion-group">
                 <div class="conversion-type">
-                    <h3>Only Rhythm</h3>
+                    <h4>Only Rhythm</h4>
                     <div class="audio-sample">
                         <p>Model 1</p>
                         <audio controls>
@@ -118,7 +125,7 @@
                     </div>
                 </div>
                 <div class="conversion-type">
-                    <h3>Only Timbre</h3>
+                    <h4>Only Timbre</h4>
                     <div class="audio-sample">
                         <p>Model 1</p>
                         <audio controls>
@@ -162,17 +169,19 @@
         <!-- 继续添加其他平行样本组 -->
         
         <!-- 非平行样本部分 -->
+        <div class="section-title">Non-Parallel Samples</div>
+        
         <div class="sample-group">
-            <h2>Non-Parallel Samples - Group 1</h2>
+            <h3>Group 1</h3>
             <div class="audio-sample">
-                <h3>Source Audio</h3>
+                <p>Source Audio</p>
                 <audio controls>
                     <source src="assets/non_parallel1/source.wav" type="audio/wav">
                     Your browser does not support the audio element.
                 </audio>
             </div>
             <div class="audio-sample">
-                <h3>Target Audio</h3>
+                <p>Target Audio</p>
                 <audio controls>
                     <source src="assets/non_parallel1/target.wav" type="audio/wav">
                     Your browser does not support the audio element.
@@ -180,7 +189,7 @@
             </div>
             <div class="conversion-group">
                 <div class="conversion-type">
-                    <h3>Only Rhythm</h3>
+                    <h4>Only Rhythm</h4>
                     <div class="audio-sample">
                         <p>Model 1</p>
                         <audio controls>
@@ -218,7 +227,7 @@
                     </div>
                 </div>
                 <div class="conversion-type">
-                    <h3>Only Timbre</h3>
+                    <h4>Only Timbre</h4>
                     <div class="audio-sample">
                         <p>Model 1</p>
                         <audio controls>
