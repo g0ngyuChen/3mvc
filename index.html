@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice Conversion Demo</title>
+    <title>3Mvc Demo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -80,11 +80,18 @@
 </head>
 <body>
     <header>
-        <h1>Voice Conversion Demo</h1>
+        <h1>3Mvc</h1>
     </header>
     <div class="container">
         <div class="intro">
-            <p>Here you can add a brief introduction or description of your voice conversion models and the purpose of this demo page. You can explain the different models and what each conversion type demonstrates. This section provides context to the users about the audio samples they are going to hear.</p>
+            <p>Here is the demo page of 3Mvc,which is a multi-component VC model using multi-augmentation and multi-task disentanglement.</p>
+            <ul>
+                <li>3Mvc-a: using pitch averaging.</li>
+                <li>3Mvc-p: using random pitch perturbation.</li>
+                <li>Baseline: SRDvc model.(https://arxiv.org/abs/2208.08757)</li>
+                <li>w/o Two Stage: 3Mvc-a without two stage training setting.</li>
+                <li>w/o c-recon: 3Mvc-a without content reconstruction.</li>
+            </ul>
         </div>
         <!-- 平行样本部分 -->
         <div class="section-title">Parallel Samples</div>
