@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3Mvc Demo</title>
+    <title>Voice Conversion Demo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,8 +14,21 @@
         header {
             background-color: #333;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+        }
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header-content h1 {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        .intro {
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
         .container {
             max-width: 1400px;
@@ -23,9 +36,6 @@
             padding: 20px;
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .intro {
-            margin-bottom: 20px;
         }
         .section-title {
             margin: 40px 0 20px;
@@ -80,11 +90,10 @@
 </head>
 <body>
     <header>
-        <h1>3Mvc</h1>
-    </header>
-    <div class="container">
-        <div class="intro">
-            <p>Here is the demo page of 3Mvc,which is a multi-component VC model using multi-augmentation and multi-task disentanglement.</p>
+        <div class="header-content">
+            <h1>Voice Conversion Demo</h1>
+            <div class="intro">
+                <p>Here is the demo page of 3Mvc,which is a multi-component VC model using multi-augmentation and multi-task disentanglement.</p>
             <ul>
                 <li>3Mvc-a: using pitch averaging.</li>
                 <li>3Mvc-p: using random pitch perturbation.</li>
@@ -92,7 +101,10 @@
                 <li>w/o Two Stage: 3Mvc-a without two stage training setting.</li>
                 <li>w/o c-recon: 3Mvc-a without content reconstruction.</li>
             </ul>
+            </div>
         </div>
+    </header>
+    <div class="container">
         <!-- 平行样本部分 -->
         <div class="section-title">Parallel Samples</div>
         
