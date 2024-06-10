@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3Mvc Demo</title>
+    <title>Voice Conversion Demo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -92,7 +92,7 @@
 <body>
     <header>
         <div class="header-content">
-            <h1>3Mvc demo</h1>
+            <h1>Voice Conversion Demo</h1>
             <div class="intro">
                 <p>Here is the demo page of 3Mvc,which is a multi-component VC model using multi-augmentation and multi-task disentanglement.</p>
             <ul>
@@ -102,7 +102,6 @@
                 <li>w/o Two Stage: 3Mvc-a without two stage training setting.</li>
                 <li>w/o c-recon: 3Mvc-a without content reconstruction.</li>
             </ul>
-                </ul>
             </div>
         </div>
     </header>
@@ -110,6 +109,7 @@
         <!-- 平行样本部分 -->
         <div class="section-title">Parallel Samples</div>
         
+        <!-- 平行样本组 1 -->
         <div class="sample-group">
             <h3>Group 1</h3>
             <div class="audio-sample">
@@ -133,14 +133,14 @@
                         <div>
                             <p>Baseline (SRDvc)</p>
                             <audio controls>
-                                <source src="assets/parallel1/model1_pitch.wav" type="audio/wav">
+                                <source src="assets/parallel1/model1_p.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>Proposed 3Mvc-a</p>
                             <audio controls>
-                                <source src="assets/parallel1/model2_pitch.wav" type="audio/wav">
+                                <source src="assets/parallel1/model2_p.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -149,14 +149,14 @@
                         <div>
                             <p>Proposed 3Mvc-p</p>
                             <audio controls>
-                                <source src="assets/parallel1/model3_pitch.wav" type="audio/wav">
+                                <source src="assets/parallel1/model3_p.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>w/o Two Stage</p>
                             <audio controls>
-                                <source src="assets/parallel1/model4_pitch.wav" type="audio/wav">
+                                <source src="assets/parallel1/model4_p.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -165,7 +165,7 @@
                         <div>
                             <p>w/o c-recon</p>
                             <audio controls>
-                                <source src="assets/parallel1/model5_pitch.wav" type="audio/wav">
+                                <source src="assets/parallel1/model5_p.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -177,14 +177,14 @@
                         <div>
                             <p>Baseline (SRDvc)</p>
                             <audio controls>
-                                <source src="assets/parallel1/model1_timbre.wav" type="audio/wav">
+                                <source src="assets/parallel1/model1_t.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>Proposed 3Mvc-a</p>
                             <audio controls>
-                                <source src="assets/parallel1/model2_timbre.wav" type="audio/wav">
+                                <source src="assets/parallel1/model2_t.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -193,14 +193,14 @@
                         <div>
                             <p>Proposed 3Mvc-p</p>
                             <audio controls>
-                                <source src="assets/parallel1/model3_timbre.wav" type="audio/wav">
+                                <source src="assets/parallel1/model3_t.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>w/o Two Stage</p>
                             <audio controls>
-                                <source src="assets/parallel1/model4_timbre.wav" type="audio/wav">
+                                <source src="assets/parallel1/model4_t.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -209,7 +209,7 @@
                         <div>
                             <p>w/o c-recon</p>
                             <audio controls>
-                                <source src="assets/parallel1/model5_timbre.wav" type="audio/wav">
+                                <source src="assets/parallel1/model5_t.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -221,14 +221,14 @@
                         <div>
                             <p>Baseline (SRDvc)</p>
                             <audio controls>
-                                <source src="assets/parallel1/model1_rhythm.wav" type="audio/wav">
+                                <source src="assets/parallel1/model1_r.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>Proposed 3Mvc-a</p>
                             <audio controls>
-                                <source src="assets/parallel1/model2_rhythm.wav" type="audio/wav">
+                                <source src="assets/parallel1/model2_r.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -237,14 +237,14 @@
                         <div>
                             <p>Proposed 3Mvc-p</p>
                             <audio controls>
-                                <source src="assets/parallel1/model3_rhythm.wav" type="audio/wav">
+                                <source src="assets/parallel1/model3_r.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>w/o Two Stage</p>
                             <audio controls>
-                                <source src="assets/parallel1/model4_rhythm.wav" type="audio/wav">
+                                <source src="assets/parallel1/model4_r.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -253,7 +253,7 @@
                         <div>
                             <p>w/o c-recon</p>
                             <audio controls>
-                                <source src="assets/parallel1/model5_rhythm.wav" type="audio/wav">
+                                <source src="assets/parallel1/model5_r.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -265,14 +265,14 @@
                         <div>
                             <p>Baseline (SRDvc)</p>
                             <audio controls>
-                                <source src="assets/parallel1/model1_combined.wav" type="audio/wav">
+                                <source src="assets/parallel1/model1_tp.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>Proposed 3Mvc-a</p>
                             <audio controls>
-                                <source src="assets/parallel1/model2_combined.wav" type="audio/wav">
+                                <source src="assets/parallel1/model2_tp.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -281,14 +281,14 @@
                         <div>
                             <p>Proposed 3Mvc-p</p>
                             <audio controls>
-                                <source src="assets/parallel1/model3_combined.wav" type="audio/wav">
+                                <source src="assets/parallel1/model3_tp.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>w/o Two Stage</p>
                             <audio controls>
-                                <source src="assets/parallel1/model4_combined.wav" type="audio/wav">
+                                <source src="assets/parallel1/model4_tp.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -297,7 +297,7 @@
                         <div>
                             <p>w/o c-recon</p>
                             <audio controls>
-                                <source src="assets/parallel1/model5_combined.wav" type="audio/wav">
+                                <source src="assets/parallel1/model5_tp.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -305,25 +305,21 @@
                 </div>
             </div>
         </div>
-
-        <!-- 继续添加其他平行样本组 -->
         
-        <!-- 非平行样本部分 -->
-        <div class="section-title">Non-Parallel Samples</div>
-        
+        <!-- 平行样本组 2 -->
         <div class="sample-group">
-            <h3>Group 1</h3>
+            <h3>Group 2</h3>
             <div class="audio-sample">
                 <div class="audio-label">Source Audio</div>
                 <audio controls>
-                    <source src="assets/non_parallel1/source.wav" type="audio/wav">
+                    <source src="assets/parallel2/source.wav" type="audio/wav">
                     Your browser does not support the audio element.
                 </audio>
             </div>
             <div class="audio-sample">
                 <div class="audio-label">Target Audio</div>
                 <audio controls>
-                    <source src="assets/non_parallel1/target.wav" type="audio/wav">
+                    <source src="assets/parallel2/target.wav" type="audio/wav">
                     Your browser does not support the audio element.
                 </audio>
             </div>
@@ -334,14 +330,14 @@
                         <div>
                             <p>Baseline (SRDvc)</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model1_pitch.wav" type="audio/wav">
+                                <source src="assets/parallel2/model1_p.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>Proposed 3Mvc-a</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model2_pitch.wav" type="audio/wav">
+                                <source src="assets/parallel2/model2_p.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -350,14 +346,14 @@
                         <div>
                             <p>Proposed 3Mvc-p</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model3_pitch.wav" type="audio/wav">
+                                <source src="assets/parallel2/model3_p.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>w/o Two Stage</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model4_pitch.wav" type="audio/wav">
+                                <source src="assets/parallel2/model4_p.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -366,7 +362,7 @@
                         <div>
                             <p>w/o c-recon</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model5_pitch.wav" type="audio/wav">
+                                <source src="assets/parallel2/model5_p.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -378,14 +374,14 @@
                         <div>
                             <p>Baseline (SRDvc)</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model1_timbre.wav" type="audio/wav">
+                                <source src="assets/parallel2/model1_t.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>Proposed 3Mvc-a</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model2_timbre.wav" type="audio/wav">
+                                <source src="assets/parallel2/model2_t.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -394,14 +390,14 @@
                         <div>
                             <p>Proposed 3Mvc-p</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model3_timbre.wav" type="audio/wav">
+                                <source src="assets/parallel2/model3_t.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>w/o Two Stage</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model4_timbre.wav" type="audio/wav">
+                                <source src="assets/parallel2/model4_t.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -410,7 +406,7 @@
                         <div>
                             <p>w/o c-recon</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model5_timbre.wav" type="audio/wav">
+                                <source src="assets/parallel2/model5_t.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -422,14 +418,14 @@
                         <div>
                             <p>Baseline (SRDvc)</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model1_rhythm.wav" type="audio/wav">
+                                <source src="assets/parallel2/model1_r.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>Proposed 3Mvc-a</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model2_rhythm.wav" type="audio/wav">
+                                <source src="assets/parallel2/model2_r.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -438,14 +434,14 @@
                         <div>
                             <p>Proposed 3Mvc-p</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model3_rhythm.wav" type="audio/wav">
+                                <source src="assets/parallel2/model3_r.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>w/o Two Stage</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model4_rhythm.wav" type="audio/wav">
+                                <source src="assets/parallel2/model4_r.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -454,7 +450,7 @@
                         <div>
                             <p>w/o c-recon</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model5_rhythm.wav" type="audio/wav">
+                                <source src="assets/parallel2/model5_r.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -466,14 +462,14 @@
                         <div>
                             <p>Baseline (SRDvc)</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model1_combined.wav" type="audio/wav">
+                                <source src="assets/parallel2/model1_tp.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>Proposed 3Mvc-a</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model2_combined.wav" type="audio/wav">
+                                <source src="assets/parallel2/model2_tp.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -482,14 +478,14 @@
                         <div>
                             <p>Proposed 3Mvc-p</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model3_combined.wav" type="audio/wav">
+                                <source src="assets/parallel2/model3_tp.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div>
                             <p>w/o Two Stage</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model4_combined.wav" type="audio/wav">
+                                <source src="assets/parallel2/model4_tp.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -498,7 +494,204 @@
                         <div>
                             <p>w/o c-recon</p>
                             <audio controls>
-                                <source src="assets/non_parallel1/model5_combined.wav" type="audio/wav">
+                                <source src="assets/parallel2/model5_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 平行样本组 3 -->
+        <div class="sample-group">
+            <h3>Group 3</h3>
+            <div class="audio-sample">
+                <div class="audio-label">Source Audio</div>
+                <audio controls>
+                    <source src="assets/parallel3/source.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <div class="audio-label">Target Audio</div>
+                <audio controls>
+                    <source src="assets/parallel3/target.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="conversion-group">
+                <div class="conversion-type">
+                    <h4>Only Pitch</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model1_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model2_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model3_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model4_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model5_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="conversion-type">
+                    <h4>Only Timbre</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model1_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model2_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model3_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model4_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model5_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="conversion-type">
+                    <h4>Only Rhythm</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model1_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model2_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model3_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model4_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model5_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="conversion-type">
+                    <h4>Timbre + Pitch</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model1_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model2_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model3_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model4_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/parallel3/model5_tp.wav" type="audio/wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
@@ -507,7 +700,599 @@
             </div>
         </div>
 
-        <!-- 继续添加其他非平行样本组 -->
+        <!-- 非平行样本部分 -->
+        <div class="section-title">Non-Parallel Samples</div>
+        
+        <!-- 非平行样本组 1 -->
+        <div class="sample-group">
+            <h3>Group 1</h3>
+            <div class="audio-sample">
+                <div class="audio-label">Source Audio</div>
+                <audio controls>
+                    <source src="assets/unparallel1/source.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <div class="audio-label">Target Audio</div>
+                <audio controls>
+                    <source src="assets/unparallel1/target.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="conversion-group">
+                <div class="conversion-type">
+                    <h4>Only Pitch</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model1_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model2_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model3_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model4_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model5_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="conversion-type">
+                    <h4>Only Timbre</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model1_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model2_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model3_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model4_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model5_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="conversion-type">
+                    <h4>Only Rhythm</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model1_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model2_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model3_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model4_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model5_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="conversion-type">
+                    <h4>Timbre + Pitch</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model1_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model2_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model3_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model4_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/unparallel1/model5_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 非平行样本组 2 -->
+        <div class="sample-group">
+            <h3>Group 2</h3>
+            <div class="audio-sample">
+                <div class="audio-label">Source Audio</div>
+                <audio controls>
+                    <source src="assets/unparallel2/source.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <div class="audio-label">Target Audio</div>
+                <audio controls>
+                    <source src="assets/unparallel2/target.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="conversion-group">
+                <div class="conversion-type">
+                    <h4>Only Pitch</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model1_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model2_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model3_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model4_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model5_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="conversion-type">
+                    <h4>Only Timbre</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model1_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model2_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model3_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model4_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model5_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="conversion-type">
+                    <h4>Only Rhythm</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model1_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model2_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model3_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model4_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model5_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="conversion-type">
+                    <h4>Timbre + Pitch</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model1_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model2_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model3_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model4_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/unparallel2/model5_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 非平行样本组 3 -->
+        <div class="sample-group">
+            <h3>Group 3</h3>
+            <div class="audio-sample">
+                <div class="audio-label">Source Audio</div>
+                <audio controls>
+                    <source src="assets/unparallel3/source.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <div class="audio-label">Target Audio</div>
+                <audio controls>
+                    <source src="assets/unparallel3/target.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="conversion-group">
+                <div class="conversion-type">
+                    <h4>Only Pitch</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model1_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model2_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model3_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model4_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model5_p.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="conversion-type">
+                    <h4>Only Timbre</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model1_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model2_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model3_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model4_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model5_t.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="conversion-type">
+                    <h4>Only Rhythm</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model1_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model2_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model3_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model4_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model5_r.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="conversion-type">
+                    <h4>Timbre + Pitch</h4>
+                    <div class="audio-model">
+                        <div>
+                            <p>Baseline (SRDvc)</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model1_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>Proposed 3Mvc-a</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model2_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>Proposed 3Mvc-p</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model3_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div>
+                            <p>w/o Two Stage</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model4_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audio-model">
+                        <div>
+                            <p>w/o c-recon</p>
+                            <audio controls>
+                                <source src="assets/unparallel3/model5_tp.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <p>© 2024 Your Name</p>
